@@ -39,6 +39,8 @@ struct PostgresConverterDelegate: SQLConverterDelegate {
             return SQLRaw("TIME")
         case .float:
             return SQLRaw("FLOAT")
+            case .daterange:
+            return SQLRaw("daterange")
         case .custom:
             return nil
         }
